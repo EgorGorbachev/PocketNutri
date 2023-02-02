@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/primaryLight"
+    android:padding="10dp"
+    tools:ignore="ContentDescription">
+
+    <TextView
+        android:id="@+id/calcRecyclerItemDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/calcRecyclerItemAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_20"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcRecyclerItemDate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calories_title"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/margin_6"
+        app:layout_constraintBottom_toBottomOf="@+id/calcRecyclerItemAmount"
+        app:layout_constraintStart_toEndOf="@+id/calcRecyclerItemAmount"
+        app:layout_constraintTop_toTopOf="@+id/calcRecyclerItemAmount" />
+
+
+    <ImageButton
+        android:id="@+id/calcRecyclerItemDeleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_delete_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingHorizontal="@dimen/margin_26"
+        android:paddingVertical="@dimen/margin_16"
+        android:backgroundTint="@color/primaryDark" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

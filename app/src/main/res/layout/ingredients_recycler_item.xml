@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginVertical="10dp"
+    android:background="@color/primaryLight"
+    tools:ignore="contentDescription">
+
+    <LinearLayout
+        android:id="@+id/ingredientsRecyclerItemImageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/view_dimen_0"
+
+        android:background="@drawable/border_radius_shape_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ingredientsRecyclerItemImage"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_10"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_launcher_foreground" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/ingredientsRecyclerItemTitle"
+        android:layout_width="@dimen/view_dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_10"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ingredientsRecyclerItemImageContainer"
+        app:layout_constraintTop_toTopOf="@id/ingredientsRecyclerItemImageContainer" />
+
+    <LinearLayout
+        android:id="@+id/ingredientsRecyclerItemButtonsContainer"
+        android:layout_width="@dimen/view_dimen_0"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/margin_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ingredientsRecyclerItemImageContainer">
+
+        <Button
+            android:id="@+id/ingredientsRecyclerItemMoreInfoButton"
+            android:layout_width="@dimen/view_dimen_0"
+            android:layout_height="wrap_content"
+            android:text="@string/ingredients_recycler_item_more_info_button"
+            android:textAllCaps="false"
+            android:layout_weight="0.7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ingredientsRecyclerItemImageContainer"
+            tools:ignore="InefficientWeight" />
+
+        <ImageButton
+            android:id="@+id/ingredientsRecyclerAddButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_10"
+            android:backgroundTint="@color/primaryDark"
+            android:src="@drawable/ic_baseline_add_24"
+            app:layout_constraintBottom_toBottomOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/button" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

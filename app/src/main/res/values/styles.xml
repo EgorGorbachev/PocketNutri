@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="sign_up_sign_in_screens_edit_text">
+        <item name="android:layout_marginStart">@dimen/margin_16</item>
+        <item name="android:layout_marginTop">@dimen/margin_10</item>
+        <item name="android:layout_marginEnd">@dimen/margin_16</item>
+        <item name="android:background">@drawable/edit_text_border</item>
+    </style>
+
+    <style name="confirm_button">
+        <item name="android:layout_marginTop">@dimen/margin_40</item>
+        <item name="android:layout_marginStart">@dimen/margin_20</item>
+        <item name="android:layout_marginEnd">@dimen/margin_20</item>
+        <item name="android:paddingTop">@dimen/margin_14</item>
+        <item name="android:paddingBottom">@dimen/margin_14</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="email_edit_text" parent="sign_up_sign_in_screens_edit_text">
+        <item name="android:layout_marginTop">@dimen/margin_80</item>
+        <item name="android:hint">@string/email_edit_text_hint</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:paddingTop">@dimen/margin_10</item>
+        <item name="android:paddingBottom">@dimen/margin_10</item>
+    </style>
+
+    <style name="password_text_edit" parent="sign_up_sign_in_screens_edit_text">
+        <item name="android:layout_marginTop">@dimen/margin_20</item>
+        <item name="android:hint">@string/password_edit_text_hint</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:paddingTop">@dimen/margin_10</item>
+        <item name="android:paddingBottom">@dimen/margin_10</item>
+    </style>
+
+    <style name="nav_button">
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:layout_margin">@dimen/margin_2</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:insetTop">@dimen/view_dimen_0</item>
+        <item name="android:insetBottom">@dimen/view_dimen_0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/primaryDark</item>
+    </style>
+</resources>

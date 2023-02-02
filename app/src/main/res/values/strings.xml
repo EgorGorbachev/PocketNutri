@@ -1,0 +1,76 @@
+<resources>
+    <!-- General -->
+    <string name="app_name">pocketNutri</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name_text">Pocket Nutri</string>
+    <string name="message">Pocket Nutri</string>
+    <string name="calories_title">cal</string>
+
+    <!-- Navigation -->
+    <string name="navigation_recipes">Recipes</string>
+    <string name="navigation_ingredients">Ingredients</string>
+    <string name="navigation_calculator">Calculator</string>
+
+    <!-- Sign in, sign up, forgot password fragments-->
+    <string name="email_edit_text_hint">Email</string>
+    <string name="password_edit_text_hint">Password</string>
+    <string name="sign_up_password_confirm_edit_text_hint">Confirm password</string>
+    <string name="sign_up_button">Sign Up</string>
+    <string name="to_sign_in_container_text">Already have an account?</string>
+    <string name="to_sign_in_container_button">Sing In</string>
+    <string name="sign_up_sign_in_check_box">Remember me</string>
+    <string name="sign_in_button">Sign In</string>
+    <string name="to_sign_up_container_text">Don`n have an account yet?</string>
+    <string name="to_sign_up_container_button">Sign Up</string>
+    <string name="sign_in_to_forgot_password_button">Forgot password?</string>
+    <string name="forgot_password_description_text">* A confirmation email will be sent to your email</string>
+    <string name="forgot_password_confirm_button_text">Confirm</string>
+    <string name="email_incorrect_message">You wrote incorrect email!</string>
+    <string name="password_incorrect_message">You wrote incorrect password!</string>
+    <string name="passwords_do_not_match_message">Passwords do not match!</string>
+    <string name="success_sign_up_message">You have successfully signed up!</string>
+    <string name="forgot_password_empty_email_message">Enter your email!</string>
+    <string name="forgot_password_success_sent_message">Password reset message has been sent. Check you email!</string>
+    <string name="unregistered_email_message">You wrote unregistered email!</string>
+    <string name="unregistered_email_or_incorrect_password_message">You wrote unregistered email or incorrect password!</string>
+    <string name="email_or_password_field_empty_message">Enter email and password!</string>
+
+    <!-- Calculator fragment-->
+    <string name="calculator_empty_history_message">You don\'t have a calculation history yet!</string>
+
+    <!-- Ingredients fragment-->
+    <string name="ingredients_empty_input_message">Enter your request!</string>
+    <string name="ingredients_incorrect_request_message">You wrote incorrect request!</string>
+    <string name="ingredients_add_to_history_button_title">Add to history</string>
+    <string name="ingredients_edit_text_hint">Input ingredient</string>
+
+    <!-- Ingredients details fragment-->
+    <string name="ingredients_details_button_title">Add to counter</string>
+    <string name="ingredients_details_caloric_breakdown_title">Caloric Breakdown:</string>
+    <string name="ingredients_details_caloric_breakdown_protein">Percent protein:</string>
+    <string name="ingredients_details_caloric_breakdown_fat">Percent Fat:</string>
+    <string name="ingredients_details_caloric_breakdown_carbs">Percent Carbs:</string>
+    <string name="ingredients_details_nutrition_title">Nutrition:</string>
+
+    <!-- Recipes fragment-->
+    <string name="recipes_empty_input_message">Enter your request!</string>
+    <string name="recipes_incorrect_request_message">You wrote incorrect request!</string>
+    <string name="rec_edit_text">Input recipe</string>
+
+    <!-- Recipes details fragment-->
+    <string name="recipe_details_ingredients_title">Ingredients:</string>
+    <string name="ingredient_details_summary_title">Summary:</string>
+
+    <!-- Settings fragment-->
+    <string name="settings_sign_out_button">Sign out</string>
+
+    <!-- Ingredients details recycler -->
+    <string name="ingredient_details_recycler_item_name">Fat</string>
+    <string name="ingredient_details_recycler_item_percent_title">Percent Of Daily Needs:</string>
+
+    <!-- Ingredients recycler -->
+    <string name="ingredients_recycler_item_more_info_button">Details</string>
+
+    <!-- Recipes recycler -->
+    <string name="recipes_recycler_item_more_info_button">Details</string>
+</resources>

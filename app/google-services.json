@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "531262728307",
+    "firebase_url": "https://pocketnutri-default-rtdb.firebaseio.com",
+    "project_id": "pocketnutri",
+    "storage_bucket": "pocketnutri.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531262728307:android:3ea4b7a58836c0cfb5e206",
+        "android_client_info": {
+          "package_name": "com.example.pocketnutri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "531262728307-oo6nvfifq049krrcc8p44ns1notjp9cv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pocketnutri",
+            "certificate_hash": "ab3fdc4deb984ea402ec92a9997f272ea53f80d5"
+          }
+        },
+        {
+          "client_id": "531262728307-55ooiuudrgrq7mbrg9l0931s01oj0cfb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN5Y_HImBlvxTEl3e_qhu7yfGGCn4P6AM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "531262728307-55ooiuudrgrq7mbrg9l0931s01oj0cfb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

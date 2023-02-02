@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryLight"
+    tools:context=".ui.fragments.recipes.Recipes"
+    tools:ignore="contentDescription, autofill">
+
+    <TextView
+        android:id="@+id/recEmptyInputMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recipes_empty_input_message"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_24"
+        app:layout_constraintBottom_toTopOf="@+id/recButtonContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recEditText" />
+
+    <TextView
+        android:id="@+id/recIncorrectRequestMessage"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recipes_incorrect_request_message"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_24"
+        app:layout_constraintBottom_toTopOf="@+id/recButtonContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recEditText" />
+
+    <EditText
+        android:id="@+id/recEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@drawable/edit_text_border"
+        android:hint="@string/rec_edit_text"
+        android:inputType="textAutoComplete"
+        android:padding="@dimen/margin_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_dimen_0"
+        android:layout_margin="@dimen/margin_10"
+        app:layout_constraintBottom_toTopOf="@+id/recButtonContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recEditText">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/recipes_recycler_item" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/recButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/fromRecToCalculatorButton"
+            style="@style/nav_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/calculator_icon"
+            android:text="@string/navigation_calculator" />
+
+        <Button
+            android:id="@+id/fromRecToIngredientsButton"
+            style="@style/nav_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/ingredients_icon"
+            android:text="@string/navigation_ingredients" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

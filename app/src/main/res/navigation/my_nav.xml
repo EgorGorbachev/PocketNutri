@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.example.pocketnutri.ui.fragments.splash_screen.SplashScreen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreen_to_signIn"
+            app:destination="@id/signIn"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_splashScreen_to_calculator"
+            app:destination="@id/calculator"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.example.pocketnutri.ui.fragments.sign_up.SignUp"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUp_to_signIn"
+            app:destination="@id/signIn"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_signUp_to_calculator"
+            app:destination="@id/calculator"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/signIn"
+        android:name="com.example.pocketnutri.ui.fragments.sign_in.SignIn"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signIn_to_signUp"
+            app:destination="@id/signUp"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_signIn_to_forgotPassword"
+            app:destination="@id/forgotPassword"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"/>
+        <action
+            android:id="@+id/action_signIn_to_calculator"
+            app:destination="@id/calculator"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPassword"
+        android:name="com.example.pocketnutri.ui.fragments.forgot_password.ForgotPassword"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" >
+        <action
+            android:id="@+id/action_forgotPassword_to_signIn"
+            app:destination="@id/signIn"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/calculator"
+        android:name="com.example.pocketnutri.ui.fragments.calculator.Calculator"
+        android:label="fragment_calculator"
+        tools:layout="@layout/fragment_calculator" >
+        <action
+            android:id="@+id/action_calculator_to_recipes"
+            app:destination="@id/recipes"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"/>
+        <action
+            android:id="@+id/action_calculator_to_ingredients"
+            app:destination="@id/ingredients"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"/>
+        <action
+            android:id="@+id/action_calculator_to_settings"
+            app:destination="@id/settings"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/ingredients"
+        android:name="com.example.pocketnutri.ui.fragments.ingredients.Ingredients"
+        android:label="fragment_ingredients"
+        tools:layout="@layout/fragment_ingredients" >
+        <action
+            android:id="@+id/action_ingredients_to_calculator"
+            app:destination="@id/calculator"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"/>
+        <action
+            android:id="@+id/action_ingredients_to_recipes"
+            app:destination="@id/recipes"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"/>
+        <action
+            android:id="@+id/action_ingredients_to_ingredientsDetails"
+            app:destination="@id/ingredientsDetails"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/recipes"
+        android:name="com.example.pocketnutri.ui.fragments.recipes.Recipes"
+        android:label="fragment_recipes"
+        tools:layout="@layout/fragment_recipes" >
+        <action
+            android:id="@+id/action_recipes_to_calculator"
+            app:destination="@id/calculator"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"/>
+        <action
+            android:id="@+id/action_recipes_to_ingredients"
+            app:destination="@id/ingredients"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"/>
+        <action
+            android:id="@+id/action_recipes_to_recipesDetails"
+            app:destination="@id/recipesDetails"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/ingredientsDetails"
+        android:name="com.example.pocketnutri.ui.fragments.ingredients_details.IngredientDetails"
+        android:label="fragment_ingredients_details"
+        tools:layout="@layout/fragment_ingredients_details" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_ingredientsDetails_to_ingredients"
+            app:destination="@id/ingredients"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.pocketnutri.ui.fragments.settings.Settings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settings_to_signIn"
+            app:destination="@id/signIn"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/recipesDetails"
+        android:name="com.example.pocketnutri.ui.fragments.recipes_details.RecipeDetails"
+        android:label="fragment_recipes_details"
+        tools:layout="@layout/fragment_recipes_details" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_recipesDetails_to_recipes"
+            app:destination="@id/recipes" app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"/>
+    </fragment>
+</navigation>
